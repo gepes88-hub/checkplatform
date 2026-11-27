@@ -1,0 +1,19 @@
+# Supabase 설정 — Edge Function 은 모두 Verify JWT 끔 (ATEAM과 같은 방식)
+#   survey · interview : 로그인 없는 응답자용 → 링크 토큰으로 검증
+#   doc-extract · analyze · ai-report : 함수 안에서 로그인 사용자·진단 권한 확인
+project_id = "checkplatform"
+
+[functions.survey]
+verify_jwt = false
+
+[functions.interview]
+verify_jwt = false
+
+[functions.doc-extract]
+verify_jwt = false
+
+[functions.analyze]
+verify_jwt = false
+
+[functions.ai-report]
+verify_jwt = false
